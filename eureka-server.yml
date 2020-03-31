@@ -1,8 +1,4 @@
 #Application Name
-spring:
-  application:
-    name: eureka-server
-
 server:
   port: 8761
 
