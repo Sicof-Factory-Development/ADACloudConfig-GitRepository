@@ -11,3 +11,8 @@ eureka:
       defaultZone: http://localhost:8761/eureka
   server:
     waitTimeInMsWhenSyncEmpty: 0    #wait time for subsequent sync
+    
+# Spring properties in case you use different profiles
+profiles:
+  active: dev
+    
