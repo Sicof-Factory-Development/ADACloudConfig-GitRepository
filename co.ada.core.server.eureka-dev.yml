@@ -17,22 +17,22 @@ eureka:
     waitTimeInMsWhenSyncEmpty: 0    #wait time for subsequent sync  
 
 #Peer 1
-spring:
-  profiles: peer1
-eureka:
-  instance:
-    hostname: http://localhost:8761
+#spring:
+#  profiles: peer1
+#eureka:
+#  instance:
+#    hostname: http://localhost:8761
 
 #Peer 2
-spring:
-  profiles: peer2
-eureka:
-  instance:
-    hostname: http://localhost:8762
+#spring:
+#  profiles: peer2
+#eureka:
+#  instance:
+#    hostname: http://localhost:8762
     
 #Peer 3    
-spring:
-  profiles: peer3
-eureka:
-  instance:
-    hostname: http://localhost:8763   
+#spring:
+#  profiles: peer3
+#eureka:
+#  instance:
+#    hostname: http://localhost:8763   
