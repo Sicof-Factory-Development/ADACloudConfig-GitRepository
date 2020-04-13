@@ -1,14 +1,28 @@
-spring.application.name=co.ada.core.server.zuul
-server.port=8090
+server:
+  port:8090  
 
-eureka.client.serviceUrl.defaulZone=http://localhost:8761/eureka
+eureka:
+  client:
+    serviceUrl:
+      defaulZone:http://localhost:8761/eureka      
 
-zuul.routes.productos.service-id=servicio-productos
-zuul.routes.productos.path=/api/productos/**
+zuul:
+  routes:
+    productos:
+      service-id:servicio-productos
+      path:/api/productos/**
+    items:
+      service-id:servicio-items
+      path:/api/items/**
 
-zuul.routes.items.service-id=servicio-items
-zuul.routes.items.path=/api/items/**
+Hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds:20000
 
-Hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds=20000
-ribbon.ConnectTimeout=3000
-ribbon.ReadTimeout=10000
+ribbon:
+  ConnectTimeout:3000
+  ReadTimeout:10000
