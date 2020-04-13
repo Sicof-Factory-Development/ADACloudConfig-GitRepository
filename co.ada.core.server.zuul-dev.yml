@@ -1,19 +1,19 @@
 server:
-  port:8090  
+  port: 8090  
 
 eureka:
   client:
     serviceUrl:
-      defaulZone:http://localhost:8761/eureka      
+      defaulZone: http://localhost:8761/eureka      
 
 zuul:
   routes:
     productos:
-      service-id:servicio-productos
-      path:/api/productos/**
+      service-id: servicio-productos
+      path: /api/productos/**
     items:
-      service-id:servicio-items
-      path:/api/items/**
+      service-id: servicio-items
+      path: /api/items/**
 
 Hystrix:
   command:
@@ -21,8 +21,8 @@ Hystrix:
       execution:
         isolation:
           thread:
-            timeoutInMilliseconds:20000
+            timeoutInMilliseconds: 20000
 
 ribbon:
-  ConnectTimeout:3000
-  ReadTimeout:10000
+  ConnectTimeout: 3000
+  ReadTimeout: 10000
