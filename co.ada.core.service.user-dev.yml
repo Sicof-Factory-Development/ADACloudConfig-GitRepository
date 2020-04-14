@@ -19,3 +19,21 @@ Hystrix:
 ribbon:
   ConnectTimeout: 3000
   ReadTimeout: 10000
+  
+spring:
+  datasource:
+    url: jdbc:oracle:thin:@//10.1.140.101:1521/db102
+    username: USER_ADM
+    password: USER_ADM
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+
+    jpa:
+      database-platform: org.hibernate.dialect.Oracle11gDialect
+      hibernate.ddl-auto: none
+
+logging:
+  pattern:
+    console: %d{yyyy-MM-dd HH:mm:ss} %-5level %logger{36} - %msg%n
+  level:
+    org:
+      hibernate.SQL: debug
