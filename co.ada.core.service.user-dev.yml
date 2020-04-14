@@ -1,12 +1,19 @@
-server:
-  port: ${PORT:0}  
+spring:
+  datasource:
+    url: jdbc:oracle:thin:@//10.1.140.101:1521/db102
+    username: USER_ADM
+    password: USER_ADM
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+  jpa:
+    database-platform: org.hibernate.dialect.Oracle11gDialect
+    hibernate.ddl-auto: none
 
-eureka:
-  client:
-    serviceUrl:
-      defaulZone: http://localhost:8761/eureka 
-  instance:
-    instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}      
+logging:
+  pattern:
+    console: %d{yyyy-MM-dd HH:mm:ss} %-5level %logger{36} - %msg%n
+  level:
+    org:
+      hibernate.SQL: debug  
 
 Hystrix:
   command:
