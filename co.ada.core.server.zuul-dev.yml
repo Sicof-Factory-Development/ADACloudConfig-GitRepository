@@ -8,6 +8,9 @@ eureka:
 
 zuul:
   routes:
+    usuario:
+      service-id: co.ada.core.service.user
+      path: /api/usuario/**
     productos:
       service-id: servicio-productos
       path: /api/productos/**
