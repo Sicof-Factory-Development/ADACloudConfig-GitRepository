@@ -8,7 +8,7 @@ info:
 #Eureka Config 
 eureka:
   instance:
-    hostname: http://eureka-mig.adacsc.co
+    hostname: eureka-mig.adacsc.co
     #hostname: localhost
   client:
     #telling the server not to register himself in the service registry
