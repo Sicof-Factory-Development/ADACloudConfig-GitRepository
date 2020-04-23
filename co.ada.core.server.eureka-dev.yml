@@ -4,30 +4,24 @@ info:
 #Default
 spring:
   profiles: default
-  
 server:
   port: 8761
-  waitTimeInMsWhenSyncEmpty: 0    #wait time for subsequent sync  
-
 eureka:
-  instance:    
-    hostname: localhost
+  instance:
+    hostname: default-eureka-server.com
   client:
     #telling the server not to register himself in the service registry
     registerWithEureka: false
     fetchRegistry: false
     serviceUrl:
-      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka   
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
 
----    
+---
 #Peer 1
 spring:
-  profiles: peer1
-  
+  profiles: peer1  
 server:
   port: 8762
-  waitTimeInMsWhenSyncEmpty: 0    #wait time for subsequent sync    
-  
 eureka:
   instance:
     hostname: peer1-server.com
@@ -35,19 +29,14 @@ eureka:
     #telling the server not to register himself in the service registry
     registerWithEureka: true
     fetchRegistry: true
-    serviceUrl:      
-      defaultZone: http://peer2-server.com:8763/eureka, http://peer3-server.com:8764/eureka
-   
-   
-   
+    serviceUrl:
+      defaultZone: http://peer2-server.com:8763/eureka/, http://peer3-server.com:8764/eureka/
+
 ---
 spring:
-  profiles: peer2
-  
+  profiles: peer2  
 server:
-  port: 8763
-  waitTimeInMsWhenSyncEmpty: 0    #wait time for subsequent sync    
-  
+  port: 8763  
 eureka:
   instance:
     hostname: peer2-server.com
@@ -55,18 +44,15 @@ eureka:
     #telling the server not to register himself in the service registry
     registerWithEureka: true
     fetchRegistry: true
-    serviceUrl:      
-      defaultZone: http://peer1-server.com:8762/eureka, http://peer3-server.com:8764/eureka
+    serviceUrl:
+      defaultZone: http://peer1-server.com:8762/eureka/, http://peer3-server.com:8764/eureka/
 
----    
+---
 #Peer 3    
 spring:
-  profiles: peer3
-  
+  profiles: peer3  
 server:
   port: 8764
-  waitTimeInMsWhenSyncEmpty: 0    #wait time for subsequent sync    
-  
 eureka:
   instance:
     hostname: peer3-server.com
@@ -74,5 +60,5 @@ eureka:
     #telling the server not to register himself in the service registry
     registerWithEureka: true
     fetchRegistry: true
-    serviceUrl:      
-      defaultZone: http://peer1-server.com:8762/eureka, http://peer2-server.com:8763/eureka
+    serviceUrl:
+      defaultZone: http://peer1-server.com:8762/eureka/, http://peer2-server.com:8763/eureka/
