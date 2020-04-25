@@ -11,3 +11,47 @@
      fetchRegistry: false
      serviceUrl:
        defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+
+---
+#Peer 1
+ spring:
+   profiles: devpeer1  
+ server:
+   port: 8762
+ eureka:
+   instance:
+     hostname: peer1-server.com
+   client:    
+     registerWithEureka: true
+     fetchRegistry: true
+     serviceUrl:
+       defaultZone: http://peer2-server.com:8763/eureka/, http://peer3-server.com:8764/eureka/
+
+---
+#Peer 2
+ spring:
+   profiles: devpeer2  
+ server:
+   port: 8763  
+ eureka:
+   instance:
+     hostname: peer2-server.com
+   client:    
+     registerWithEureka: true
+     fetchRegistry: true
+     serviceUrl:
+       defaultZone: http://peer1-server.com:8762/eureka/, http://peer3-server.com:8764/eureka/
+---
+#Peer 3    
+ spring:
+   profiles: devpeer3  
+ server:
+   port: 8764
+ eureka:
+   instance:
+     hostname: peer3-server.com
+   client:    
+     registerWithEureka: true
+     fetchRegistry: true
+     serviceUrl:
+       defaultZone: http://peer1-server.com:8762/eureka/, http://peer2-server.com:8763/eureka/
