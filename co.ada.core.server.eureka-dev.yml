@@ -20,12 +20,12 @@
    port: 8762
  eureka:
    instance:
-     hostname: localhost
+     hostname: peer1-server.com
    client:    
      registerWithEureka: true
      fetchRegistry: true
      serviceUrl:
-       defaultZone: http://localhost:8763/eureka/, http://localhost:8764/eureka/
+       defaultZone: http://peer2-server.com:8763/eureka/, http://peer3-server.com:8764/eureka/
 
 ---
 #Peer 2
@@ -35,12 +35,12 @@
    port: 8763  
  eureka:
    instance:
-     hostname: localhost
+     hostname: peer2-server.com
    client:    
      registerWithEureka: true
      fetchRegistry: true
      serviceUrl:
-       defaultZone: http://localhost:8762/eureka/, http://localhost:8764/eureka/
+       defaultZone: http://peer1-server.com:8762/eureka/, http://peer3-server.com:8764/eureka/
 ---
 #Peer 3    
  spring:
@@ -49,9 +49,9 @@
    port: 8764
  eureka:
    instance:
-     hostname: localhost
+     hostname: peer3-server.com
    client:    
      registerWithEureka: true
      fetchRegistry: true
      serviceUrl:
-       defaultZone: http://localhost:8762/eureka/, http://localhost:8763/eureka/
+       defaultZone: http://peer1-server.com:8762/eureka/, http://peer2-server.com:8763/eureka/
