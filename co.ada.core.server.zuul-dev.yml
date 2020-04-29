@@ -18,8 +18,8 @@ zuul:
       service-id: servicio-items
       path: /api/items/**
     users:
-      service-id: co.ada.core.service.user
-      path: /api/users/**
+      service-id: co.ada.core.microservicio.usuario
+      path: /api/**
 
 Hystrix:
   command:
