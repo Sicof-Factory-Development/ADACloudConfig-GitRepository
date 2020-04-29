@@ -9,7 +9,7 @@ eureka:
 zuul:
   routes:
     usuario:
-      service-id: co.ada.core.service.user
+      service-id: co.ada.core.service.userold
       path: /api/usuario/**
     productos:
       service-id: servicio-productos
@@ -17,6 +17,9 @@ zuul:
     items:
       service-id: servicio-items
       path: /api/items/**
+    users:
+      service-id: co.ada.core.service.user
+      path: /api/users/**
 
 Hystrix:
   command:
