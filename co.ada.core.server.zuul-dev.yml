@@ -22,7 +22,7 @@ zuul:
       path: /api/**
     oauth:
       service-id: co.ada.core.server.oauth
-      path: /api/security/**
+      path: /api/security/oauth/**
       sensitive-headers: Cookie,Set-Cookie
 
 Hystrix:
