@@ -20,6 +20,10 @@ zuul:
     users:
       service-id: co.ada.core.microservicio.usuario
       path: /api/**
+    oauth:
+      service-id: co.ada.core.server.oauth
+      path: /api/security/**
+      sensitive-headers: Cookie,Set-Cookie
 
 Hystrix:
   command:
@@ -27,8 +31,8 @@ Hystrix:
       execution:
         isolation:
           thread:
-            timeoutInMilliseconds: 20000
+            timeoutInMilliseconds: 40000
 
 ribbon:
-  ConnectTimeout: 3000
-  ReadTimeout: 10000
+  ConnectTimeout: 6000
+  ReadTimeout: 20000
