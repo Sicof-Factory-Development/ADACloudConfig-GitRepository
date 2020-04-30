@@ -20,9 +20,9 @@ zuul:
     users:
       service-id: co.ada.core.microservicio.usuario
       path: /api/**
-    oauth:
+    security:
       service-id: co.ada.core.server.oauth
-      path: /api/security/oauth/**
+      path: /api/security/**
       sensitive-headers: Cookie,Set-Cookie
 
 Hystrix:
