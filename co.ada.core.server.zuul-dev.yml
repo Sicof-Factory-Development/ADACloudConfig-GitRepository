@@ -19,7 +19,7 @@ zuul:
       path: /api/items/**
     users:
       service-id: co.ada.core.microservicio.usuario
-      path: /api/**
+      path: /api/crud/**
     security:
       service-id: co.ada.core.server.oauth
       path: /api/security/**
