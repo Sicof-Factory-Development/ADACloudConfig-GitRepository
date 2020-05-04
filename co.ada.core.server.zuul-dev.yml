@@ -1,12 +1,6 @@
 server:
   port: 8090  
 
-eureka:
-  client:
-    serviceUrl:
-      defaulZone: http://localhost:8761/eureka   
-    fetch-registry: true      
-
 zuul:
   routes:
     usuario:      
@@ -34,4 +28,4 @@ spring:
     sampler:
       probability: 1.0
   zipkin:
-    base-url: http://localhost:9411/  
+    base-url: http://localhost:9411/
