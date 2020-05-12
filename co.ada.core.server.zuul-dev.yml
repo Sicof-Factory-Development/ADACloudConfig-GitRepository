@@ -11,7 +11,7 @@ zuul:
       path: /api/security/**
       sensitive-headers: Cookie,Set-Cookie
     test.model:
-      service-id: co.ada.test.microservice.prueba
+      service-id: co.ada.test.microservicio.prueba
       path: /api/test/**    
 
 Hystrix:
