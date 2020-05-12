@@ -10,9 +10,9 @@ zuul:
       service-id: co.ada.core.server.oauth
       path: /api/security/**
       sensitive-headers: Cookie,Set-Cookie
-    test.model:
+    prueba:
       service-id: co.ada.test.microservicio.prueba
-      path: /api/test/**    
+      path: /api/prueba/**
 
 Hystrix:
   command:
