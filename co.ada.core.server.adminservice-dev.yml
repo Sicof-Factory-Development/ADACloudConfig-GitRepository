@@ -3,3 +3,8 @@ server:
   
 info:
   component: Microservices Adminstration Server
+  
+spring:
+  security:
+    user: migracion
+    password: migracion2020*
