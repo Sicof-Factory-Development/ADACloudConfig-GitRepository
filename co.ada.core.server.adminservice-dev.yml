@@ -1,10 +1,10 @@
 server:
   port: 9999
   
-info:
-  component: Microservices Adminstration Server
+#info:
+#  component: Microservices Adminstration Server
   
-spring:
-  security:
-    user: migracion
-    password: migracion2020*
+#spring:
+#  security:
+#    user: migracion
+#    password: migracion2020*
