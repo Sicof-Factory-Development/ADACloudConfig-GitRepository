@@ -16,8 +16,7 @@ spring:
          password: client                  
    boot:
       admin:
-         client.url: http://localhost:9999
-         url: http://localhost:9999
+         client.url: http://localhost:9999         
          api-path: /instances
          client:
             username: admin
