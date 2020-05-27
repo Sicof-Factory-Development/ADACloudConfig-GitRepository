@@ -1,5 +1,8 @@
 server:
-  port: 8090  
+  port: 8090
+  
+info:
+  component: Gateway Server
 
 zuul:
   routes:
