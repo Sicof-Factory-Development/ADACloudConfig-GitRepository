@@ -10,6 +10,9 @@ zuul:
       service-id: co.ada.core.server.oauth
       path: /api/security/**
       sensitive-headers: Cookie,Set-Cookie
+    utility:
+      service-id: co.ada.core.service.utility
+      path: /api/utility/**      
     prueba:
       service-id: co.ada.test.microservicio.pruebamodel
       path: /api/prueba/**
