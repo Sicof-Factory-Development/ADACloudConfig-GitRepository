@@ -19,6 +19,9 @@ zuul:
     prueba:
       service-id: co.ada.test.microservicio.pruebamodel
       path: /api/prueba/**
+    recaudo:
+      service-id: co.ada.sicof.rentas.recaudo
+      path: /api/rentas/recaudo/**
 
 Hystrix:
   command:
