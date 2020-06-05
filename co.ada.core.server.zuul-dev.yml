@@ -6,22 +6,25 @@ info:
 
 zuul:
   routes:
-    usuario:      
+    core-service-usuario:      
       service-id: co.ada.core.microservicio.usuario
       path: /api/core/usuarios/**
-    security:
+    core-service-security:
       service-id: co.ada.core.server.oauth
       path: /api/security/**
       sensitive-headers: Cookie,Set-Cookie
-    utility:
+    core-service-utility:
       service-id: co.ada.core.service.utility
       path: /api/core/utility/**      
-    prueba:
+    test-pruebamodel:
       service-id: co.ada.test.microservicio.pruebamodel
       path: /api/prueba/**
-    recaudo:
+    rentas-recaudo:
       service-id: co.ada.sicof.rentas.recaudo
       path: /api/rentas/recaudo/**
+    rentas-recargo:
+      service-id: co.ada.sicof.rentas.recargo
+      path: /api/rentas/recargo**
 
 Hystrix:
   command:
