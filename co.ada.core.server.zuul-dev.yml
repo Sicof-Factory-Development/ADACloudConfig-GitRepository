@@ -8,7 +8,7 @@ zuul:
   routes:
     usuario:      
       service-id: co.ada.core.microservicio.usuario
-      path: /api/crud/usuarios/**
+      path: /api/core/usuarios/**
     security:
       service-id: co.ada.core.server.oauth
       path: /api/security/**
