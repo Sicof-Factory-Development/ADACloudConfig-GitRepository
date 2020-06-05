@@ -15,7 +15,7 @@ zuul:
       sensitive-headers: Cookie,Set-Cookie
     utility:
       service-id: co.ada.core.service.utility
-      path: /api/utility/**      
+      path: /api/core/utility/**      
     prueba:
       service-id: co.ada.test.microservicio.pruebamodel
       path: /api/prueba/**
