@@ -25,6 +25,9 @@ zuul:
     rentas-recargo:
       service-id: co.ada.sicof.rentas.recargo
       path: /api/rentas/recargo/**
+    rentas-liquidacion-novedadobjeto:
+      service-id: co.ada.sicof.rentas.liquidacion.novedadobjeto
+      path: /api/rentas/novedadobjeto/**
 
 Hystrix:
   command:
