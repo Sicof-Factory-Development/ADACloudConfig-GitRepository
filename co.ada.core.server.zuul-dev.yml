@@ -29,6 +29,9 @@ zuul:
       service-id: co.ada.sicof.rentas.liquidacion.novedadobjeto
       path: /api/rentas/novedadobjeto/**
     rentas-facturacionperiodo:
+      service-id: co.ada.sicof.rentas.recaudo.formapago
+      path: /api/rentas/formapago/**
+    rentas-recaudo-formapago:
       service-id: co.ada.sicof.rentas.facturacionperiodo
       path: /api/rentas/facturacionperiodo/**
     nomina-estadosnovedad:
