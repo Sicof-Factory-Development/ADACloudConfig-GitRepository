@@ -1,0 +1,64 @@
+server:
+  port: 8090
+  
+info:
+  component: Gateway Server
+
+zuul:
+  routes:
+    core-service-usuario:      
+      service-id: co.ada.core.microservicio.usuario
+      path: /api/core/usuarios/**
+    core-service-security:
+      service-id: co.ada.core.server.oauth
+      path: /api/security/**
+      sensitive-headers: Cookie,Set-Cookie
+    core-service-utility:
+      service-id: co.ada.core.service.utility
+      path: /api/core/utility/**      
+    test-pruebamodel:
+      service-id: co.ada.test.microservicio.pruebamodel
+      path: /api/prueba/**
+    rentas-recaudo:
+      service-id: co.ada.sicof.rentas.recaudo
+      path: /api/rentas/recaudo/**
+    rentas-recargo:
+      service-id: co.ada.sicof.rentas.recargo
+      path: /api/rentas/recargo/**
+    rentas-liquidacion-novedadobjeto:
+      service-id: co.ada.sicof.rentas.liquidacion.novedadobjeto
+      path: /api/rentas/novedadobjeto/**
+    rentas-recaudo-formapago:
+      service-id: co.ada.sicof.rentas.recaudo.formapago
+      path: /api/rentas/formapago/**
+    rentas-facturacionperiodo:
+      service-id: co.ada.sicof.rentas.facturacionperiodo
+      path: /api/rentas/facturacionperiodo/**
+    nomina-estadosnovedad:
+      service-id: co.ada.sicof.nomina.estadosnovedad
+      path: /api/nomina/estadosnovedad/**
+    nomina-jefeempleados:
+      service-id: co.ada.sicof.nomina.jefeempleados
+      path: /api/nomina/jefeempleados/**
+    nomina-periodosliquidacion:
+      service-id: co.ada.sicof.nomina.periodosliquidacion
+      path: /api/nomina/periodosliquidacion/**
+
+Hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 40000
+
+ribbon:
+  ConnectTimeout: 6000
+  ReadTimeout: 20000
+  
+spring:
+  sleuth:
+    sampler:
+      probability: 1.0
+  zipkin:
+    base-url: http://10.1.140.20:9411/
