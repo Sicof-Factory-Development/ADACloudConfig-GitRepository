@@ -17,6 +17,9 @@ zuul:
     core-service-usuario:      
       service-id: co.ada.core.microservicio.usuario
       path: /api/core/usuarios/**    
+    core-service-userlogin:      
+      service-id: co.ada.core.service.userlogin
+      path: /api/core/userlogin/**    
     core-service-utility:
       service-id: co.ada.core.service.utility
       path: /api/core/utility/**      
