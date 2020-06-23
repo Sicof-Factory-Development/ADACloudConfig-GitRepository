@@ -9,11 +9,7 @@ zuul:
     core-server-security:
       service-id: co.ada.core.server.security
       path: /api/security/**
-      sensitive-headers: Cookie,Set-Cookie
-    core-server-oauth:
-      service-id: co.ada.core.server.oauth
-      path: /api/security/**
-      sensitive-headers: Cookie,Set-Cookie
+      sensitive-headers: Cookie,Set-Cookie    
     core-service-usuario:      
       service-id: co.ada.core.microservicio.usuario
       path: /api/core/usuarios/**    
