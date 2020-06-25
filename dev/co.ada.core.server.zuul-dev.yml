@@ -46,7 +46,22 @@ zuul:
     nomina-periodosliquidacion:
       service-id: co.ada.sicof.nomina.periodosliquidacion
       path: /api/nomina/periodosliquidacion/**
-
+    nomina-tiposliquidacion:
+      service-id: co.ada.sicof.nomina.tiposliquidacion
+      path: /api/nomina/tiposliquidacion/**
+    nomina-juzgados:
+      service-id: co.ada.sicof.nomina.juzgados
+      path: /api/nomina/juzgados/**
+    nomina-novedadconcepto:
+      service-id: co.ada.sicof.nomina.novedadconcepto
+      path: /api/nomina/novedadconcepto/**
+    nomina-empleados:
+      service-id: co.ada.sicof.nomina.empleados
+      path: /api/nomina/empleados/**
+    nomina-conceptos:
+      service-id: co.ada.sicof.nomina.conceptos
+      path: /api/nomina/conceptos/**
+      
 Hystrix:
   command:
     default:
