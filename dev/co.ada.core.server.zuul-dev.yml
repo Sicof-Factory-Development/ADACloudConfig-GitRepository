@@ -61,6 +61,9 @@ zuul:
     nomina-conceptos:
       service-id: co.ada.sicof.nomina.conceptos
       path: /api/nomina/conceptos/**
+    nomina-tiposnomina:
+      service-id: co.ada.sicof.nomina.tiposnomina
+      path: /api/nomina/tiposnomina/**
       
 Hystrix:
   command:
