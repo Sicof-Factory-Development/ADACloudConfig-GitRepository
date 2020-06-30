@@ -37,6 +37,12 @@ zuul:
     rentas-facturacionperiodo:
       service-id: co.ada.sicof.rentas.facturacionperiodo
       path: /api/rentas/facturacionperiodo/**
+    rentas-tipoliquidacion:
+      service-id: co.ada.sicof.rentas.tipoliquidacion
+      path: /api/rentas/tipoliquidacion/**
+    rentas-fuenteingreso:
+      service-id: co.ada.sicof.rentas.fuenteingreso
+      path: /api/rentas/fuenteingreso/**
     nomina-estadosnovedad:
       service-id: co.ada.sicof.nomina.estadosnovedad
       path: /api/nomina/estadosnovedad/**
@@ -64,6 +70,15 @@ zuul:
     nomina-tiposnomina:
       service-id: co.ada.sicof.nomina.tiposnomina
       path: /api/nomina/tiposnomina/**
+    nomina-tiposenfermedad:
+      service-id: co.ada.sicof.nomina.tiposenfermedad
+      path: /api/nomina/tiposenfermedad/**
+    nomina-tiposvalorembargo:
+      service-id: co.ada.sicof.nomina.tiposvalorembargo
+      path: /api/nomina/tiposvalorembargo/**
+    nomina-ciudades:
+      service-id: co.ada.sicof.nomina.ciudades
+      path: /api/nomina/ciudades/**
       
 Hystrix:
   command:
