@@ -18,34 +18,13 @@ zuul:
       path: /api/core/userlogin/**    
     core-service-utility:
       service-id: co.ada.core.service.utility
-      path: /api/core/utility/**      
-    test-pruebamodel:
-      service-id: co.ada.test.microservicio.pruebamodel
-      path: /api/prueba/**
-    rentas-recaudo:
-      service-id: co.ada.sicof.rentas.recaudo
-      path: /api/rentas/recaudo/**
-    rentas-recargo:
-      service-id: co.ada.sicof.rentas.recargo
-      path: /api/rentas/recargo/**
-    rentas-liquidacion-novedadobjeto:
-      service-id: co.ada.sicof.rentas.liquidacion.novedadobjeto
-      path: /api/rentas/novedadobjeto/**
-    rentas-recaudo-formapago:
-      service-id: co.ada.sicof.rentas.recaudo.formapago
-      path: /api/rentas/formapago/**
-    rentas-facturacionperiodo:
-      service-id: co.ada.sicof.rentas.facturacionperiodo
-      path: /api/rentas/facturacionperiodo/**
-    rentas-tipoliquidacion:
-      service-id: co.ada.sicof.rentas.tipoliquidacion
-      path: /api/rentas/tipoliquidacion/**
-    rentas-fuenteingreso:
-      service-id: co.ada.sicof.rentas.fuenteingreso
-      path: /api/rentas/fuenteingreso/**
+      path: /api/core/utility/** 
+    contabilidad-tercero:
+      service-id: co.ada.sicof.contabilidad.tercero
+      path: /api/contabilidad/tercero/**
     nomina-estadosnovedad:
       service-id: co.ada.sicof.nomina.estadosnovedad
-      path: /api/nomina/estadosnovedad/**
+      path: /api/nomina/estadosnovedad/**    
     nomina-jefeempleados:
       service-id: co.ada.sicof.nomina.jefeempleados
       path: /api/nomina/jefeempleados/**
@@ -79,6 +58,30 @@ zuul:
     nomina-ciudades:
       service-id: co.ada.sicof.nomina.ciudades
       path: /api/nomina/ciudades/**
+    test-pruebamodel:
+      service-id: co.ada.test.microservicio.pruebamodel
+      path: /api/prueba/**
+    rentas-recaudo:
+      service-id: co.ada.sicof.rentas.recaudo
+      path: /api/rentas/recaudo/**
+    rentas-recargo:
+      service-id: co.ada.sicof.rentas.recargo
+      path: /api/rentas/recargo/**
+    rentas-liquidacion-novedadobjeto:
+      service-id: co.ada.sicof.rentas.liquidacion.novedadobjeto
+      path: /api/rentas/novedadobjeto/**
+    rentas-recaudo-formapago:
+      service-id: co.ada.sicof.rentas.recaudo.formapago
+      path: /api/rentas/formapago/**
+    rentas-facturacionperiodo:
+      service-id: co.ada.sicof.rentas.facturacionperiodo
+      path: /api/rentas/facturacionperiodo/**
+    rentas-tipoliquidacion:
+      service-id: co.ada.sicof.rentas.tipoliquidacion
+      path: /api/rentas/tipoliquidacion/**
+    rentas-fuenteingreso:
+      service-id: co.ada.sicof.rentas.fuenteingreso
+      path: /api/rentas/fuenteingreso/**    
       
 Hystrix:
   command:
