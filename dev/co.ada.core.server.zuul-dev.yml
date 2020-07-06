@@ -22,6 +22,15 @@ zuul:
     contabilidad-tercero:
       service-id: co.ada.sicof.contabilidad.tercero
       path: /api/contabilidad/tercero/**
+    nomina-novedaddescuento:
+      service-id: co.ada.sicof.nomina.novedaddescuento
+      path: /api/nomina/novedaddescuento/**  
+    nomina-paises:
+      service-id: co.ada.sicof.nomina.paises
+      path: /api/nomina/paises/**	
+    nomina-departamentos:
+      service-id: co.ada.sicof.nomina.departamentos
+      path: /api/nomina/departamentos/**	  
     nomina-tipoempleado:
       service-id: co.ada.sicof.nomina.tipoempleado
       path: /api/nomina/tipoempleado/**   
