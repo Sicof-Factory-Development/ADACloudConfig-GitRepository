@@ -93,7 +93,13 @@ zuul:
       path: /api/rentas/tipoliquidacion/**
     rentas-fuenteingreso:
       service-id: co.ada.sicof.rentas.fuenteingreso
-      path: /api/rentas/fuenteingreso/**    
+      path: /api/rentas/fuenteingreso/**
+    rentas-concepto:
+      service-id: co.ada.sicof.rentas.concepto
+      path: /api/rentas/concepto/**
+    presupuesto-maeconceptoscuentacobrar:
+      service-id: co.ada.sicof.presupuesto.maeconceptoscuentacobrar
+      path: /api/presupuesto/maeconceptoscuentacobrar/**  
       
 Hystrix:
   command:
