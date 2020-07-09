@@ -97,6 +97,9 @@ zuul:
     rentas-concepto:
       service-id: co.ada.sicof.rentas.concepto
       path: /api/rentas/concepto/**
+    rentas-tiposconcepto:
+      service-id: co.ada.sicof.rentas.tiposconcepto
+      path: /api/rentas/tiposconcepto/**  
     presupuesto-maeconceptoscuentacobrar:
       service-id: co.ada.sicof.presupuesto.maeconceptoscuentacobrar
       path: /api/presupuesto/maeconceptoscuentacobrar/**  
