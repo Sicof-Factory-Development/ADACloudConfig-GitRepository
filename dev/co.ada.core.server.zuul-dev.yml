@@ -70,6 +70,9 @@ zuul:
     nomina-ciudades:
       service-id: co.ada.sicof.nomina.ciudades
       path: /api/nomina/ciudades/**
+    nomina-novedadesunificadas:
+      service-id: co.ada.sicof.nomina.novedadesunificadas
+      path: /api/nomina/novedadesunificadas/**  
     test-pruebamodel:
       service-id: co.ada.test.microservicio.pruebamodel
       path: /api/prueba/**
