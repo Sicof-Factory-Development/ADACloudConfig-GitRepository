@@ -61,6 +61,7 @@ zuul:
     nomina-tiposnomina:
       service-id: co.ada.sicof.nomina.tiposnomina
       path: /api/nomina/tiposnomina/**
+      sensitive-headers: Cookie,Set-Cookie
     nomina-tiposenfermedad:
       service-id: co.ada.sicof.nomina.tiposenfermedad
       path: /api/nomina/tiposenfermedad/**
