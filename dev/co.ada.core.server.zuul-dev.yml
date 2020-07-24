@@ -113,6 +113,9 @@ zuul:
     rentas-operadores:
       service-id: co.ada.sicof.rentas.operadores
       path: /api/rentas/operadores/**  
+    rentas-fuentevariables:
+      service-id: co.ada.sicof.rentas.fuentevariables
+      path: /api/rentas/fuentevariables/** 
     presupuesto-maeconceptoscuentacobrar:
       service-id: co.ada.sicof.presupuesto.maeconceptoscuentacobrar
       path: /api/presupuesto/maeconceptoscuentacobrar/** 
