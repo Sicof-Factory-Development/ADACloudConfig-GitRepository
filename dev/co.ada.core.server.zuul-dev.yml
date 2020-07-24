@@ -109,10 +109,14 @@ zuul:
       path: /api/rentas/tiposconcepto/**  
     rentas-tipofacturacion:
       service-id: co.ada.sicof.rentas.tipofacturacion
-      path: /api/rentas/tipofacturacion/**	   
+      path: /api/rentas/tipofacturacion/**
+    rentas-operadores:
+      service-id: co.ada.sicof.rentas.operadores
+      path: /api/rentas/operadores/**  
     presupuesto-maeconceptoscuentacobrar:
       service-id: co.ada.sicof.presupuesto.maeconceptoscuentacobrar
-      path: /api/presupuesto/maeconceptoscuentacobrar/**  
+      path: /api/presupuesto/maeconceptoscuentacobrar/** 
+      
       
 Hystrix:
   command:
