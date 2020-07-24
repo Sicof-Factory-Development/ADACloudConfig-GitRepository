@@ -95,6 +95,9 @@ zuul:
     rentas-facturacionperiodo:
       service-id: co.ada.sicof.rentas.facturacionperiodo
       path: /api/rentas/facturacionperiodo/**
+    rentas-liquidacion periodos:
+      service-id: co.ada.sicof.rentas.liquidacionperiodos
+      path: /api/rentas/liquidacionperiodos/**  
     rentas-tipoliquidacion:
       service-id: co.ada.sicof.rentas.tipoliquidacion
       path: /api/rentas/tipoliquidacion/**
