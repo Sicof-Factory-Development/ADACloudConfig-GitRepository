@@ -76,7 +76,10 @@ zuul:
       path: /api/nomina/novedadesunificadas/**  
     nomina-novedadcalamidad:
       service-id: co.ada.sicof.nomina.novedadcalamidad
-      path: /api/nomina/novedadcalamidad/**	  
+      path: /api/nomina/novedadcalamidad/**	
+    nomina-liquidacionnomina:
+      service-id: co.ada.sicof.nomina.liquidacionnomina
+      path: /api/nomina/liquidacionnomina/**  
     test-pruebamodel:
       service-id: co.ada.test.microservicio.pruebamodel
       path: /api/prueba/**
