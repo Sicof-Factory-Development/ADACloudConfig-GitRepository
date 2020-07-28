@@ -122,6 +122,9 @@ zuul:
     rentas-fuentevariables:
       service-id: co.ada.sicof.rentas.fuentevariables
       path: /api/rentas/fuentevariables/** 
+    rentas-liquidacion:
+      service-id: co.ada.sicof.rentas.liquidacion
+      path: /api/rentas/liquidacion/**   
     presupuesto-maeconceptoscuentacobrar:
       service-id: co.ada.sicof.presupuesto.maeconceptoscuentacobrar
       path: /api/presupuesto/maeconceptoscuentacobrar/** 
