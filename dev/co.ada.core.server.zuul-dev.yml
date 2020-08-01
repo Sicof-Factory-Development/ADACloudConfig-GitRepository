@@ -143,13 +143,6 @@ ribbon:
   ReadTimeout: 20000
   
 spring:
-  sleuth:
-    sampler:
-      probability: 1.0
-  zipkin:
-    base-url: http://10.1.140.20:9411/
-    
-spring:
   datasource:
     url: jdbc:oracle:thin:@//10.1.140.101:1521/db102
     username: user_adm
@@ -162,6 +155,11 @@ spring:
     show-sql: true
     properties.hibernate.check_nullability: true
     properties.hibernate.jdbc.lob.non_contextual_creation: true
+  sleuth:
+    sampler:
+      probability: 1.0
+  zipkin:
+    base-url: http://10.1.140.20:9411/   
 
 logging:
   level.org.hibernate.SQL: debug
