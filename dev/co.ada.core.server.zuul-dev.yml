@@ -148,3 +148,20 @@ spring:
       probability: 1.0
   zipkin:
     base-url: http://10.1.140.20:9411/
+    
+spring:
+  datasource:
+    url: jdbc:oracle:thin:@//10.1.140.101:1521/db102
+    username: user_adm
+    password: user_adm
+    driver-class-name: oracle.jdbc.OracleDriver
+  jpa:
+    database-platform: org.hibernate.dialect.Oracle10gDialect
+    hibernate.ddl-auto: none
+    generate-ddl: false
+    show-sql: true
+    properties.hibernate.check_nullability: true
+    properties.hibernate.jdbc.lob.non_contextual_creation: true
+
+logging:
+  level.org.hibernate.SQL: debug
