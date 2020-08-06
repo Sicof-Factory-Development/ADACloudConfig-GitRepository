@@ -141,11 +141,11 @@ Hystrix:
       execution:
         isolation:
           thread:
-            timeoutInMilliseconds: 40000
+            timeoutInMilliseconds: 80000
 
 ribbon:
-  ConnectTimeout: 6000
-  ReadTimeout: 20000
+  ConnectTimeout: 10000
+  ReadTimeout: 30000
 
 #spring:
 #  sleuth:
