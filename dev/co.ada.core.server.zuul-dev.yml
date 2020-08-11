@@ -131,6 +131,9 @@ zuul:
     rentas-facturacion:
       service-id: co.ada.sicof.rentas.facturacion
       path: /api/rentas/facturacion/**   
+    rentas-facturacion:
+      service-id: co.ada.sicof.rentas.liquidacionconceptos
+      path: /api/rentas/liquidacionconceptos/**     
     presupuesto-maeconceptoscuentacobrar:
       service-id: co.ada.sicof.presupuesto.maeconceptoscuentacobrar
       path: /api/presupuesto/maeconceptoscuentacobrar/**      
