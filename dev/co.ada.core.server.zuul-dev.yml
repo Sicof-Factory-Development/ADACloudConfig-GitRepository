@@ -83,6 +83,18 @@ zuul:
     nomina-tipospension:
       service-id: co.ada.sicof.nomina.tipospension
       path: /api/nomina/tipospension/**  
+    nomina-clasesriesgos:
+      service-id: co.ada.sicof.nomina.clasesriesgos
+      path: /api/nomina/clasesriesgos/**   
+    nomina-empleadoscargos:
+      service-id: co.ada.sicof.nomina.empleadoscargos
+      path: /api/nomina/empleadoscargos/**
+    nomina-empleadosprofesiones:
+      service-id: co.ada.sicof.nomina.empleadosprofesiones
+      path: /api/nomina/empleadosprofesiones/**  
+    nomina-secciones:
+      service-id: co.ada.sicof.nomina.secciones
+      path: /api/nomina/secciones/**   
     test-pruebamodel:
       service-id: co.ada.test.microservicio.pruebamodel
       path: /api/prueba/**
