@@ -95,6 +95,12 @@ zuul:
     nomina-secciones:
       service-id: co.ada.sicof.nomina.secciones
       path: /api/nomina/secciones/**   
+    nomina-empleadossituacionfamiliar:
+      service-id: co.ada.sicof.nomina.empleadossituacionfamiliar
+      path: /api/nomina/empleadossituacionfamiliar/**   
+    nomina-liquidacionvariablebasicohora:
+      service-id: co.ada.sicof.nomina.liquidacionvariablebasicohora
+      path: /api/nomina/liquidacionvariablebasicohora/** 
     test-pruebamodel:
       service-id: co.ada.test.microservicio.pruebamodel
       path: /api/prueba/**
