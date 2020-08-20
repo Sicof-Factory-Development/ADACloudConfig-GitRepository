@@ -101,6 +101,9 @@ zuul:
     nomina-liquidacionvariablebasicohora:
       service-id: co.ada.sicof.nomina.liquidacionvariablebasicohora
       path: /api/nomina/liquidacionvariablebasicohora/** 
+    nomina-liquidacionnomina:
+      service-id: co.ada.sicof.nomina.liquidacionnomina
+      path: /api/nomina/liquidacionnomina/**	  
     test-pruebamodel:
       service-id: co.ada.test.microservicio.pruebamodel
       path: /api/prueba/**
