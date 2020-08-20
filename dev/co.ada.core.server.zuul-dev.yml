@@ -74,9 +74,6 @@ zuul:
     nomina-novedadcalamidad:
       service-id: co.ada.sicof.nomina.novedadcalamidad
       path: /api/nomina/novedadcalamidad/**	
-    nomina-liquidacionnomina:
-      service-id: co.ada.sicof.nomina.liquidacionnomina
-      path: /api/nomina/liquidacionnomina/**  
     nomina-tiposangre:
       service-id: co.ada.sicof.nomina.tiposangre
       path: /api/nomina/tiposangre/**    
