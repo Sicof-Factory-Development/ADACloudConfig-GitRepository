@@ -172,7 +172,7 @@ Hystrix:
             timeoutInMilliseconds: 80000
 
 ribbon:
-  ConnectTimeout: 10000
+  ConnectTimeout: 100000000
   ReadTimeout: 30000
 
 #spring:
