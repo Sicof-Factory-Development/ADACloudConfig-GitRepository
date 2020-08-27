@@ -105,6 +105,9 @@ zuul:
     nomina-liquidacionvariablesubsidiodia:
       service-id: co.ada.sicof.nomina.liquidacionvariablesubsidiodia
       path: /api/nomina/liquidacionvariablesubsidiodia/**
+    nomina-liquidacionvariablesalarioactual:
+      service-id: co.ada.sicof.nomina.liquidacionvariablesalarioactual
+      path: /api/nomina/liquidacionvariablesalarioactual/**  
     test-pruebamodel:
       service-id: co.ada.test.microservicio.pruebamodel
       path: /api/prueba/**
