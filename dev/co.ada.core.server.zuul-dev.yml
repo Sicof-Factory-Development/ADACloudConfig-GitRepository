@@ -114,6 +114,9 @@ zuul:
     nomina-empresasnomina:
       service-id: co.ada.sicof.nomina.empresasnomina
       path: /api/nomina/empresasnomina/** 
+    nomina-unidadesdepago:
+      service-id: co.ada.sicof.nomina.unidadesdepago
+      path: /api/nomina/unidadesdepago/**   
     test-pruebamodel:
       service-id: co.ada.test.microservicio.pruebamodel
       path: /api/prueba/**
