@@ -111,6 +111,9 @@ zuul:
     nomina-liquidacionvariablesubsidiooperativo:
       service-id: co.ada.sicof.nomina.liquidacionvariablesubsidiooperativo
       path: /api/nomina/liquidacionvariablesubsidiooperativo/**    
+    nomina-empresasnomina:
+      service-id: co.ada.sicof.nomina.empresasnomina
+      path: /api/nomina/empresasnomina/** 
     test-pruebamodel:
       service-id: co.ada.test.microservicio.pruebamodel
       path: /api/prueba/**
