@@ -117,6 +117,9 @@ zuul:
     nomina-unidadesdepago:
       service-id: co.ada.sicof.nomina.unidadesdepago
       path: /api/nomina/unidadesdepago/**   
+    nomina-centrocostos:
+      service-id: co.ada.sicof.nomina.centrocostos
+      path: /api/nomina/centrocostos/** 
     test-pruebamodel:
       service-id: co.ada.test.microservicio.pruebamodel
       path: /api/prueba/**
