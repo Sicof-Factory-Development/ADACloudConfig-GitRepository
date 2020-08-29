@@ -182,7 +182,10 @@ zuul:
       path: /api/administracion/parametros/**    
     presupuesto-maeconceptoscuentacobrar:
       service-id: co.ada.sicof.presupuesto.maeconceptoscuentacobrar
-      path: /api/presupuesto/maeconceptoscuentacobrar/**      
+      path: /api/presupuesto/maeconceptoscuentacobrar/**  
+    presupuesto-dependencias:
+      service-id: co.ada.sicof.presupuesto.dependencias
+      path: /api/presupuesto/dependencias/** 
       
 Hystrix:
   command:
