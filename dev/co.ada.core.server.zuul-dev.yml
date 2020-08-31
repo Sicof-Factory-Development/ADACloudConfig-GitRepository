@@ -116,7 +116,7 @@ zuul:
     nomina-unidadesdepago:
       service-id: co.ada.sicof.nomina.unidadesdepago
       path: /api/nomina/unidadesdepago/**   
-    nomina-centrocostos:
+    nomina-liquidacionvariablesaludpension:
       service-id: co.ada.sicof.nomina.liquidacionvariablesaludpension
       path: /api/nomina/liquidacionvariablesaludpension/** 
     nomina-centrocostos:
