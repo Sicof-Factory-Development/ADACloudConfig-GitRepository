@@ -1,8 +1,7 @@
 server:
   port: 8090
   
-zuul:  
-#  ignored-headers: Access-Control-Allow-Credentials, Access-Control-Allow-Origin
+zuul:
   routes:
     core-server-security:
       service-id: co.ada.core.server.security
