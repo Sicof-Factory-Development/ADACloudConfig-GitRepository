@@ -9,52 +9,67 @@ zuul:
       sensitive-headers: Cookie,Set-Cookie    
     core-service-usuario:      
       service-id: co.ada.core.microservicio.usuario
-      path: /api/core/usuarios/**    
+      path: /api/core/usuarios/**
+      sensitive-headers: Cookie,Set-Cookie
     core-service-userlogin:      
       service-id: co.ada.core.service.userlogin
       path: /api/core/userlogin/**    
     core-service-utility:
       service-id: co.ada.core.service.utility
-      path: /api/core/utility/** 
+      path: /api/core/utility/**
+      sensitive-headers: Cookie,Set-Cookie
     contabilidad-tercero:
       service-id: co.ada.sicof.contabilidad.tercero
       path: /api/contabilidad/tercero/**
+      sensitive-headers: Cookie,Set-Cookie
     nomina-novedaddescuento:
       service-id: co.ada.sicof.nomina.novedaddescuento
-      path: /api/nomina/novedaddescuento/**  
+      path: /api/nomina/novedaddescuento/**
+      sensitive-headers: Cookie,Set-Cookie
     nomina-paises:
       service-id: co.ada.sicof.nomina.paises
-      path: /api/nomina/paises/**	
+      path: /api/nomina/paises/**
+      sensitive-headers: Cookie,Set-Cookie
     nomina-departamentos:
       service-id: co.ada.sicof.nomina.departamentos
-      path: /api/nomina/departamentos/**	  
+      path: /api/nomina/departamentos/**
+      sensitive-headers: Cookie,Set-Cookie
     nomina-tipoempleado:
       service-id: co.ada.sicof.nomina.tipoempleado
-      path: /api/nomina/tipoempleado/**   
+      path: /api/nomina/tipoempleado/**
+      sensitive-headers: Cookie,Set-Cookie
     nomina-estadosnovedad:
       service-id: co.ada.sicof.nomina.estadosnovedad
-      path: /api/nomina/estadosnovedad/**    
+      path: /api/nomina/estadosnovedad/**
+      sensitive-headers: Cookie,Set-Cookie
     nomina-jefeempleados:
       service-id: co.ada.sicof.nomina.jefeempleados
       path: /api/nomina/jefeempleados/**
+      sensitive-headers: Cookie,Set-Cookie
     nomina-periodosliquidacion:
       service-id: co.ada.sicof.nomina.periodosliquidacion
       path: /api/nomina/periodosliquidacion/**
+      sensitive-headers: Cookie,Set-Cookie
     nomina-tiposliquidacion:
       service-id: co.ada.sicof.nomina.tiposliquidacion
       path: /api/nomina/tiposliquidacion/**
+      sensitive-headers: Cookie,Set-Cookie
     nomina-juzgados:
       service-id: co.ada.sicof.nomina.juzgados
       path: /api/nomina/juzgados/**
+      sensitive-headers: Cookie,Set-Cookie
     nomina-novedadconcepto:
       service-id: co.ada.sicof.nomina.novedadconcepto
       path: /api/nomina/novedadconcepto/**
+      sensitive-headers: Cookie,Set-Cookie
     nomina-empleados:
       service-id: co.ada.sicof.nomina.empleados
       path: /api/nomina/empleados/**
+      sensitive-headers: Cookie,Set-Cookie
     nomina-conceptos:
       service-id: co.ada.sicof.nomina.conceptos
       path: /api/nomina/conceptos/**
+      sensitive-headers: Cookie,Set-Cookie
     nomina-tiposnomina:
       service-id: co.ada.sicof.nomina.tiposnomina
       path: /api/nomina/tiposnomina/**
@@ -62,129 +77,171 @@ zuul:
     nomina-tiposenfermedad:
       service-id: co.ada.sicof.nomina.tiposenfermedad
       path: /api/nomina/tiposenfermedad/**
+      sensitive-headers: Cookie,Set-Cookie
     nomina-tiposvalorembargo:
       service-id: co.ada.sicof.nomina.tiposvalorembargo
       path: /api/nomina/tiposvalorembargo/**
+      sensitive-headers: Cookie,Set-Cookie
     nomina-ciudades:
       service-id: co.ada.sicof.nomina.ciudades
       path: /api/nomina/ciudades/**
+      sensitive-headers: Cookie,Set-Cookie
     nomina-novedadesunificadas:
       service-id: co.ada.sicof.nomina.novedadesunificadas
-      path: /api/nomina/novedadesunificadas/**  
+      path: /api/nomina/novedadesunificadas/**
+      sensitive-headers: Cookie,Set-Cookie
     nomina-novedadcalamidad:
       service-id: co.ada.sicof.nomina.novedadcalamidad
-      path: /api/nomina/novedadcalamidad/**	
+      path: /api/nomina/novedadcalamidad/**
+      sensitive-headers: Cookie,Set-Cookie
     nomina-tiposangre:
       service-id: co.ada.sicof.nomina.tiposangre
-      path: /api/nomina/tiposangre/**    
+      path: /api/nomina/tiposangre/**
+      sensitive-headers: Cookie,Set-Cookie
     nomina-tipospension:
       service-id: co.ada.sicof.nomina.tipospension
-      path: /api/nomina/tipospension/**  
+      path: /api/nomina/tipospension/**
+      sensitive-headers: Cookie,Set-Cookie
     nomina-clasesriesgos:
       service-id: co.ada.sicof.nomina.clasesriesgos
-      path: /api/nomina/clasesriesgos/**   
+      path: /api/nomina/clasesriesgos/**
+      sensitive-headers: Cookie,Set-Cookie
     nomina-empleadoscargos:
       service-id: co.ada.sicof.nomina.empleadoscargos
       path: /api/nomina/empleadoscargos/**
+      sensitive-headers: Cookie,Set-Cookie
     nomina-empleadosprofesiones:
       service-id: co.ada.sicof.nomina.empleadosprofesiones
-      path: /api/nomina/empleadosprofesiones/**  
+      path: /api/nomina/empleadosprofesiones/**
+      sensitive-headers: Cookie,Set-Cookie
     nomina-secciones:
       service-id: co.ada.sicof.nomina.secciones
-      path: /api/nomina/secciones/**   
+      path: /api/nomina/secciones/**
+      sensitive-headers: Cookie,Set-Cookie
     nomina-empleadossituacionfamiliar:
       service-id: co.ada.sicof.nomina.empleadossituacionfamiliar
-      path: /api/nomina/empleadossituacionfamiliar/**   
+      path: /api/nomina/empleadossituacionfamiliar/**
+      sensitive-headers: Cookie,Set-Cookie
     nomina-liquidacionvariablebasicohora:
       service-id: co.ada.sicof.nomina.liquidacionvariablebasicohora
-      path: /api/nomina/liquidacionvariablebasicohora/** 
+      path: /api/nomina/liquidacionvariablebasicohora/**
+      sensitive-headers: Cookie,Set-Cookie
     nomina-liquidacionnomina:
       service-id: co.ada.sicof.nomina.liquidacionnomina
-      path: /api/nomina/liquidacionnomina/**	
+      path: /api/nomina/liquidacionnomina/**
+      sensitive-headers: Cookie,Set-Cookie
     nomina-liquidacionvariablesubsidiodia:
       service-id: co.ada.sicof.nomina.liquidacionvariablesubsidiodia
       path: /api/nomina/liquidacionvariablesubsidiodia/**
+      sensitive-headers: Cookie,Set-Cookie
     nomina-liquidacionvariablesalarioactual:
       service-id: co.ada.sicof.nomina.liquidacionvariablesalarioactual
-      path: /api/nomina/liquidacionvariablesalarioactual/**  
+      path: /api/nomina/liquidacionvariablesalarioactual/**
+      sensitive-headers: Cookie,Set-Cookie
     nomina-liquidacionvariablesubsidiooperativo:
       service-id: co.ada.sicof.nomina.liquidacionvariablesubsidiooperativo
-      path: /api/nomina/liquidacionvariablesubsidiooperativo/**    
+      path: /api/nomina/liquidacionvariablesubsidiooperativo/**
+      sensitive-headers: Cookie,Set-Cookie
     nomina-empresasnomina:
       service-id: co.ada.sicof.nomina.empresasnomina
-      path: /api/nomina/empresasnomina/** 
+      path: /api/nomina/empresasnomina/**
+      sensitive-headers: Cookie,Set-Cookie
     nomina-unidadesdepago:
       service-id: co.ada.sicof.nomina.unidadesdepago
-      path: /api/nomina/unidadesdepago/**   
+      path: /api/nomina/unidadesdepago/**
+      sensitive-headers: Cookie,Set-Cookie
     nomina-liquidacionvariablesaludpension:
       service-id: co.ada.sicof.nomina.liquidacionvariablesaludpension
-      path: /api/nomina/liquidacionvariablesaludpension/** 
+      path: /api/nomina/liquidacionvariablesaludpension/**
+      sensitive-headers: Cookie,Set-Cookie
     nomina-centrocostos:
       service-id: co.ada.sicof.nomina.centrocostos
-      path: /api/nomina/centrocostos/**   
+      path: /api/nomina/centrocostos/**
+      sensitive-headers: Cookie,Set-Cookie
     test-pruebamodel:
       service-id: co.ada.test.microservicio.pruebamodel
       path: /api/prueba/**
+      sensitive-headers: Cookie,Set-Cookie
     rentas-recaudo:
       service-id: co.ada.sicof.rentas.recaudo
       path: /api/rentas/recaudo/**
+      sensitive-headers: Cookie,Set-Cookie
     rentas-recargo:
       service-id: co.ada.sicof.rentas.recargo
       path: /api/rentas/recargo/**
+      sensitive-headers: Cookie,Set-Cookie
     rentas-liquidacion-novedadobjeto:
       service-id: co.ada.sicof.rentas.liquidacion.novedadobjeto
       path: /api/rentas/novedadobjeto/**
+      sensitive-headers: Cookie,Set-Cookie
     rentas-recaudo-formapago:
       service-id: co.ada.sicof.rentas.recaudo.formapago
       path: /api/rentas/formapago/**
+      sensitive-headers: Cookie,Set-Cookie
     rentas-facturacionperiodo:
       service-id: co.ada.sicof.rentas.facturacionperiodo
       path: /api/rentas/facturacionperiodo/**
+      sensitive-headers: Cookie,Set-Cookie
     rentas-liquidacion periodos:
       service-id: co.ada.sicof.rentas.liquidacionperiodos
-      path: /api/rentas/liquidacionperiodos/**  
+      path: /api/rentas/liquidacionperiodos/**
+      sensitive-headers: Cookie,Set-Cookie
     rentas-tipoliquidacion:
       service-id: co.ada.sicof.rentas.tipoliquidacion
       path: /api/rentas/tipoliquidacion/**
+      sensitive-headers: Cookie,Set-Cookie
     rentas-fuenteingreso:
       service-id: co.ada.sicof.rentas.fuenteingreso
       path: /api/rentas/fuenteingreso/**
+      sensitive-headers: Cookie,Set-Cookie
     rentas-concepto:
       service-id: co.ada.sicof.rentas.concepto
       path: /api/rentas/concepto/**
+      sensitive-headers: Cookie,Set-Cookie
     rentas-tiposconcepto:
       service-id: co.ada.sicof.rentas.tiposconcepto
-      path: /api/rentas/tiposconcepto/**  
+      path: /api/rentas/tiposconcepto/**
+      sensitive-headers: Cookie,Set-Cookie
     rentas-tipofacturacion:
       service-id: co.ada.sicof.rentas.tipofacturacion
       path: /api/rentas/tipofacturacion/**
+      sensitive-headers: Cookie,Set-Cookie
     rentas-operadores:
       service-id: co.ada.sicof.rentas.operadores
-      path: /api/rentas/operadores/**  
+      path: /api/rentas/operadores/**
+      sensitive-headers: Cookie,Set-Cookie
     rentas-fuentevariables:
       service-id: co.ada.sicof.rentas.fuentevariables
-      path: /api/rentas/fuentevariables/** 
+      path: /api/rentas/fuentevariables/**
+      sensitive-headers: Cookie,Set-Cookie
     rentas-liquidacion:
       service-id: co.ada.sicof.rentas.liquidacion
-      path: /api/rentas/liquidacion/**   
+      path: /api/rentas/liquidacion/**
+      sensitive-headers: Cookie,Set-Cookie
     rentas-facturacion:
       service-id: co.ada.sicof.rentas.facturacion
-      path: /api/rentas/facturacion/**   
+      path: /api/rentas/facturacion/**
+      sensitive-headers: Cookie,Set-Cookie
     rentas-liquidacionconceptos:
       service-id: co.ada.sicof.rentas.liquidacionconceptos
-      path: /api/rentas/liquidacionconceptos/** 
+      path: /api/rentas/liquidacionconceptos/**
+      sensitive-headers: Cookie,Set-Cookie
     rentas-bitacora:
       service-id: co.ada.sicof.rentas.bitacora
-      path: /api/rentas/bitacora/**  
+      path: /api/rentas/bitacora/**
+      sensitive-headers: Cookie,Set-Cookie
     administracion-parametros:
       service-id: co.ada.sicof.administracion.parametros
-      path: /api/administracion/parametros/**    
+      path: /api/administracion/parametros/**
+      sensitive-headers: Cookie,Set-Cookie
     presupuesto-maeconceptoscuentacobrar:
       service-id: co.ada.sicof.presupuesto.maeconceptoscuentacobrar
-      path: /api/presupuesto/maeconceptoscuentacobrar/**  
+      path: /api/presupuesto/maeconceptoscuentacobrar/**
+      sensitive-headers: Cookie,Set-Cookie
     presupuesto-dependencias:
       service-id: co.ada.sicof.presupuesto.dependencias
-      path: /api/presupuesto/dependencias/** 
+      path: /api/presupuesto/dependencias/**
+      sensitive-headers: Cookie,Set-Cookie
       
 Hystrix:
   command:
@@ -192,7 +249,7 @@ Hystrix:
       execution:
         isolation:
           thread:
-            timeoutInMilliseconds: 80000
+            timeoutInMilliseconds: 800000
 
 ribbon:
   ConnectTimeout: 300000
