@@ -158,6 +158,10 @@ zuul:
       service-id: co.ada.sicof.nomina.centrocostos
       path: /api/nomina/centrocostos/**
       sensitive-headers: Cookie,Set-Cookie
+    nomina-parametrosfondosolidaridad:
+      service-id: co.ada.sicof.nomina.parametrosfondosolidaridad
+      path: /api/nomina/centrocostos/**
+      sensitive-headers: Cookie,Set-Cookie  
     test-pruebamodel:
       service-id: co.ada.test.microservicio.pruebamodel
       path: /api/prueba/**
