@@ -18,6 +18,10 @@ zuul:
       service-id: co.ada.core.service.utility
       path: /api/core/utility/**
       sensitive-headers: Cookie,Set-Cookie
+    core-service-configparam:
+      service-id: co.ada.core.service.configparam
+      path: /api/core/configparam/**
+      sensitive-headers: Cookie,Set-Cookie  
     contabilidad-tercero:
       service-id: co.ada.sicof.contabilidad.tercero
       path: /api/contabilidad/tercero/**
