@@ -170,6 +170,10 @@ zuul:
       service-id: co.ada.sicof.nomina.liquidacionvariableretefuente
       path: /api/nomina/liquidacionvariableretefuente/**  
       sensitive-headers: Cookie,Set-Cookie 
+    nomina-novedadausencia:
+      service-id: co.ada.sicof.nomina.novedadausencia
+      path: /api/nomina/novedadausencia/**
+	  sensitive-headers: Cookie,Set-Cookie 	   
     test-pruebamodel:
       service-id: co.ada.test.microservicio.pruebamodel
       path: /api/prueba/**
