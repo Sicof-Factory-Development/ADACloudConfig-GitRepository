@@ -173,7 +173,7 @@ zuul:
     nomina-novedadausencia:
       service-id: co.ada.sicof.nomina.novedadausencia
       path: /api/nomina/novedadausencia/**
-	  sensitive-headers: Cookie,Set-Cookie 	   
+      sensitive-headers: Cookie,Set-Cookie 	   
     test-pruebamodel:
       service-id: co.ada.test.microservicio.pruebamodel
       path: /api/prueba/**
