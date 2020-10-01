@@ -178,6 +178,10 @@ zuul:
       service-id: co.ada.sicof.nomina.novedadincapacidad
       path: /api/nomina/novedadincapacidad/**
       sensitive-headers: Cookie,Set-Cookie 	  
+    nomina-funciondiasenperiodo:
+      service-id: co.ada.sicof.nomina.funciondiasenperiodo
+      path: /api/nomina/funciondiasenperiodo/**
+      sensitive-headers: Cookie,Set-Cookie   
     test-pruebamodel:
       service-id: co.ada.test.microservicio.pruebamodel
       path: /api/prueba/**
@@ -273,7 +277,7 @@ Hystrix:
 
 ribbon:
   ConnectTimeout: 300000
-  ReadTimeout: 100000
+  ReadTimeout: 300000
 
 #spring:
 #  sleuth:
