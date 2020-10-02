@@ -254,6 +254,10 @@ zuul:
       service-id: co.ada.sicof.rentas.bitacora
       path: /api/rentas/bitacora/**
       sensitive-headers: Cookie,Set-Cookie
+    rentas-consecutivos:
+      service-id: co.ada.sicof.rentas.consecutivos
+      path: /api/rentas/consecutivos/**
+      sensitive-headers: Cookie,Set-Cookie  
     administracion-parametros:
       service-id: co.ada.sicof.administracion.parametros
       path: /api/administracion/parametros/**
