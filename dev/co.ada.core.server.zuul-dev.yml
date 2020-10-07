@@ -30,14 +30,6 @@ zuul:
       service-id: co.ada.sicof.nomina.novedaddescuento
       path: /api/nomina/novedaddescuento/**
       sensitive-headers: Cookie,Set-Cookie
-    nomina-paises:
-      service-id: co.ada.sicof.nomina.paises
-      path: /api/nomina/paises/**
-      sensitive-headers: Cookie,Set-Cookie
-    nomina-departamentos:
-      service-id: co.ada.sicof.nomina.departamentos
-      path: /api/nomina/departamentos/**
-      sensitive-headers: Cookie,Set-Cookie
     nomina-tipoempleado:
       service-id: co.ada.sicof.nomina.tipoempleado
       path: /api/nomina/tipoempleado/**
@@ -86,9 +78,9 @@ zuul:
       service-id: co.ada.sicof.nomina.tiposvalorembargo
       path: /api/nomina/tiposvalorembargo/**
       sensitive-headers: Cookie,Set-Cookie
-    nomina-ciudades:
-      service-id: co.ada.sicof.nomina.ciudades
-      path: /api/nomina/ciudades/**
+    nomina-ubicaciones:
+      service-id: co.ada.sicof.nomina.ubicaciones
+      path: /api/nomina/ubicaciones/**
       sensitive-headers: Cookie,Set-Cookie
     nomina-novedadesunificadas:
       service-id: co.ada.sicof.nomina.novedadesunificadas
