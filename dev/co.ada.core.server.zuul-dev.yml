@@ -34,10 +34,6 @@ zuul:
       service-id: co.ada.sicof.nomina.tipoempleado
       path: /api/nomina/tipoempleado/**
       sensitive-headers: Cookie,Set-Cookie
-    nomina-estadosnovedad:
-      service-id: co.ada.sicof.nomina.estadosnovedad
-      path: /api/nomina/estadosnovedad/**
-      sensitive-headers: Cookie,Set-Cookie
     nomina-jefeempleados:
       service-id: co.ada.sicof.nomina.jefeempleados
       path: /api/nomina/jefeempleados/**
