@@ -166,6 +166,10 @@ zuul:
       service-id: co.ada.sicof.nomina.novedadincapacidad
       path: /api/nomina/novedadincapacidad/**
       sensitive-headers: Cookie,Set-Cookie 	  
+    nomina-novedadembargo:
+      service-id: co.ada.sicof.nomina.novedadembargo
+      path: /api/nomina/novedadembargo/**
+      sensitive-headers: Cookie,Set-Cookie  
     nomina-funciondiasenperiodo:
       service-id: co.ada.sicof.nomina.funciondiasenperiodo
       path: /api/nomina/funciondiasenperiodo/**
