@@ -134,9 +134,9 @@ zuul:
       service-id: co.ada.sicof.nomina.liquidacionvariablesubsidiooperativo
       path: /api/nomina/liquidacionvariablesubsidiooperativo/**
       sensitive-headers: Cookie,Set-Cookie
-    nomina-parametrosempresasnomina:
-      service-id: co.ada.sicof.nomina.parametrosempresasnomina
-      path: /api/nomina/parametrosempresasnomina/**
+    nomina-parametros.empresasnomina:
+      service-id: co.ada.sicof.nomina.parametros.empresasnomina
+      path: /api/nomina/parametros.empresasnomina/**
       sensitive-headers: Cookie,Set-Cookie
     nomina-unidadesdepago:
       service-id: co.ada.sicof.nomina.unidadesdepago
