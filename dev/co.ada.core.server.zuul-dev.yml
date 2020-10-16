@@ -136,7 +136,7 @@ zuul:
       sensitive-headers: Cookie,Set-Cookie
     nomina-parametros.empresasnomina:
       service-id: co.ada.sicof.nomina.parametros.empresasnomina
-      path: /api/nomina/parametros.empresasnomina/**
+      path: /api/nomina/parametrosempresasnomina/**
       sensitive-headers: Cookie,Set-Cookie
     nomina-unidadesdepago:
       service-id: co.ada.sicof.nomina.unidadesdepago
