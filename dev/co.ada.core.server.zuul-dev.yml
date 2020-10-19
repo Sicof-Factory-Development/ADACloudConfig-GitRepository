@@ -134,7 +134,7 @@ zuul:
       service-id: co.ada.sicof.nomina.liquidacionvariablesubsidiooperativo
       path: /api/nomina/liquidacionvariablesubsidiooperativo/**
       sensitive-headers: Cookie,Set-Cookie
-    nomina-parametros.empresasnomina:
+    nomina-parametrosempresasnomina:
       service-id: co.ada.sicof.nomina.parametrosempresasnomina
       path: /api/nomina/parametrosempresasnomina/**
       sensitive-headers: Cookie,Set-Cookie
@@ -152,7 +152,7 @@ zuul:
       sensitive-headers: Cookie,Set-Cookie
     nomina-parametrosfondosolidaridad:
       service-id: co.ada.sicof.nomina.parametrosfondosolidaridad
-      path: /api/nomina/centrocostos/**
+      path: /api/nomina/parametrosfondosolidaridad/**
       sensitive-headers: Cookie,Set-Cookie 
     nomina-liquidacionvariableretefuente:
       service-id: co.ada.sicof.nomina.liquidacionvariableretefuente
