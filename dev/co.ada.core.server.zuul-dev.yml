@@ -174,9 +174,9 @@ zuul:
       service-id: co.ada.sicof.nomina.funciondiasenperiodo
       path: /api/nomina/funciondiasenperiodo/**
       sensitive-headers: Cookie,Set-Cookie   
-    nomina-novedadpermisoycompensatorio:
-      service-id: co.ada.sicof.nomina.novedadpermisoycompensatorio
-      path: /api/nomina/novedadpermisoycompensatorio/**
+    nomina-novedadpermisocompensatoriocalamidad:
+      service-id: co.ada.sicof.nomina.novedadpermisocompensatoriocalamidad
+      path: /api/nomina/novedadpermisocompensatoriocalamidad/**
       sensitive-headers: Cookie,Set-Cookie     
     test-pruebamodel:
       service-id: co.ada.test.microservicio.pruebamodel
