@@ -258,6 +258,10 @@ zuul:
       service-id: co.ada.sicof.rentas.maestrosrentas
       path: /api/rentas/maestrosrentas/**
       sensitive-headers: Cookie,Set-Cookie   
+    rentas-maestrosintereses:
+      service-id: co.ada.sicof.rentas.intereses
+      path: /api/rentas/intereses/**
+      sensitive-headers: Cookie,Set-Cookie   
     administracion-parametros:
       service-id: co.ada.sicof.administracion.parametros
       path: /api/administracion/parametros/**
