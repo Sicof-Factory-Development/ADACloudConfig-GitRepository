@@ -178,6 +178,10 @@ zuul:
       service-id: co.ada.sicof.nomina.novedadpermisocompensatoriocalamidad
       path: /api/nomina/novedadpermisocompensatoriocalamidad/**
       sensitive-headers: Cookie,Set-Cookie     
+    nomina-novedadlicencias:
+      service-id: co.ada.sicof.nomina.novedadlicencias
+      path: /api/nomina/novedadlicencias/**
+      sensitive-headers: Cookie,Set-Cookie    
     test-pruebamodel:
       service-id: co.ada.test.microservicio.pruebamodel
       path: /api/prueba/**
