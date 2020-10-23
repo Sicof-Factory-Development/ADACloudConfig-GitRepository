@@ -176,7 +176,7 @@ zuul:
       sensitive-headers: Cookie,Set-Cookie   
     nomina-novedadpermcompcalam:
       service-id: co.ada.sicof.nomina.novedadpermcompcalam
-      path: /api/nomina/novedadpermcompcalam**
+      path: /api/nomina/novedadpermcompcalam/**
       sensitive-headers: Cookie,Set-Cookie     
     nomina-novedadlicencias:
       service-id: co.ada.sicof.nomina.novedadlicencias
