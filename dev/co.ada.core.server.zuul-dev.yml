@@ -13,7 +13,11 @@ zuul:
       sensitive-headers: Cookie,Set-Cookie
     core-service-userlogin:      
       service-id: co.ada.core.service.userlogin
-      path: /api/core/userlogin/**    
+      path: /api/core/userlogin/**  
+    core-service-usermigration:      
+      service-id: co.ada.core.service.usermigration
+      path: /api/core/usermigration/**
+      sensitive-headers: Cookie,Set-Cookie
     core-service-utility:
       service-id: co.ada.core.service.utility
       path: /api/core/utility/**
