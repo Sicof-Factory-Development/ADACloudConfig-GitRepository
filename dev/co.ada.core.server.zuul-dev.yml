@@ -190,6 +190,10 @@ zuul:
       service-id: co.ada.sicof.nomina.novedadvacaciones
       path: /api/nomina/novedadvacaciones/**
       sensitive-headers: Cookie,Set-Cookie     
+    nomina-aumentodescuentos:
+      service-id: co.ada.sicof.nomina.aumentodescuentos
+      path: /api/nomina/aumentodescuentos/**
+      sensitive-headers: Cookie,Set-Cookie   
     test-pruebamodel:
       service-id: co.ada.test.microservicio.pruebamodel
       path: /api/prueba/**
