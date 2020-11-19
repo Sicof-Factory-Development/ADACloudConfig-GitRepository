@@ -202,6 +202,10 @@ zuul:
       service-id: co.ada.sicof.nomina.pagoautomatico
       path: /api/nomina/pagoautomatico/**
       sensitive-headers: Cookie,Set-Cookie     
+    nomina-retencionfuente:
+      service-id: co.ada.sicof.nomina.retencionfuente
+      path: /api/nomina/retencionfuente/**
+      sensitive-headers: Cookie,Set-Cookie   
     test-pruebamodel:
       service-id: co.ada.test.microservicio.pruebamodel
       path: /api/prueba/**
