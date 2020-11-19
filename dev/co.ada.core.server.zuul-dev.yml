@@ -306,6 +306,10 @@ zuul:
       service-id: co.ada.sicof.presupuesto.dependencias
       path: /api/presupuesto/dependencias/**
       sensitive-headers: Cookie,Set-Cookie
+    tesoreria-bancos:
+      service-id: co.ada.sicof.tesoreria.bancos
+      path: /api/tesoreria/bancos/**
+      sensitive-headers: Cookie,Set-Cookie  
       
 Hystrix:
   command:
