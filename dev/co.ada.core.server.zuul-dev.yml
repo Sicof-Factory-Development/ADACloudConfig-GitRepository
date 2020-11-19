@@ -26,6 +26,10 @@ zuul:
       service-id: co.ada.core.service.configparam
       path: /api/core/configparam/**
       sensitive-headers: Cookie,Set-Cookie  
+    maestrostransversales:
+      service-id: co.ada.sicof.maestrostransversales
+      path: /api/maestrostransversales/**
+      sensitive-headers: Cookie,Set-Cookie  
     contabilidad-tercero:
       service-id: co.ada.sicof.contabilidad.tercero
       path: /api/contabilidad/tercero/**
