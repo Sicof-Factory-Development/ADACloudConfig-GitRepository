@@ -317,7 +317,11 @@ zuul:
     maestrostransversales:
       service-id: co.ada.sicof.maestrostransversales
       path: /api/maestrostransversales/**
-      sensitive-headers: Cookie,Set-Cookie   
+      sensitive-headers: Cookie,Set-Cookie 
+    funcionestransversales:
+      service-id: co.ada.sicof.funcionestransversales
+      path: /api/funcionestransversales/**
+      sensitive-headers: Cookie,Set-Cookie  
       
 Hystrix:
   command:
