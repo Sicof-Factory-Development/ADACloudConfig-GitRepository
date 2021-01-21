@@ -209,6 +209,10 @@ zuul:
     nomina-autoliquidacion:
       service-id: co.ada.sicof.nomina.autoliquidacion
       path: /api/nomina/autoliquidacion/**
+      sensitive-headers: Cookie,Set-Cookie 
+    nomina-tiposlicencias:
+      service-id: co.ada.sicof.nomina.tiposlicencias
+      path: /api/nomina/tiposlicencias/**
       sensitive-headers: Cookie,Set-Cookie   
     test-pruebamodel:
       service-id: co.ada.test.microservicio.pruebamodel
