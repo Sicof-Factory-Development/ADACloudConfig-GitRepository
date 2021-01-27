@@ -214,6 +214,10 @@ zuul:
       service-id: co.ada.sicof.nomina.tiposlicencias
       path: /api/nomina/tiposlicencias/**
       sensitive-headers: Cookie,Set-Cookie   
+    nomina-novedadesadministrativas:
+      service-id: co.ada.sicof.nomina.novedadesadministrativas
+      path: /api/nomina/novedadesadministrativas/**
+      sensitive-headers: Cookie,Set-Cookie    
     test-pruebamodel:
       service-id: co.ada.test.microservicio.pruebamodel
       path: /api/prueba/**
