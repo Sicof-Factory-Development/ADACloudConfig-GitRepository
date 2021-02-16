@@ -178,9 +178,9 @@ zuul:
       service-id: co.ada.sicof.nomina.funciondiasenperiodo
       path: /api/nomina/funciondiasenperiodo/**
       sensitive-headers: Cookie,Set-Cookie   
-    nomina-novedadpermcompcalam:
-      service-id: co.ada.sicof.nomina.novedadepermisos
-      path: /api/nomina/novedadepermisos/**
+    nomina-novedadespermisos:
+      service-id: co.ada.sicof.nomina.novedadespermisos
+      path: /api/nomina/novedadespermisos/**
       sensitive-headers: Cookie,Set-Cookie     
     nomina-novedadlicencias:
       service-id: co.ada.sicof.nomina.novedadlicencias
