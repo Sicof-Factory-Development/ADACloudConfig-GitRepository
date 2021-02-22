@@ -222,6 +222,10 @@ zuul:
       service-id: co.ada.sicof.nomina.novedadesexternas
       path: /api/nomina/novedadesexternas/**
       sensitive-headers: Cookie,Set-Cookie   
+    nomina-novedadencargos:
+      service-id: co.ada.sicof.nomina.novedadencargos
+      path: /api/nomina/novedadencargos/**
+      sensitive-headers: Cookie,Set-Cookie    
     test-pruebamodel:
       service-id: co.ada.test.microservicio.pruebamodel
       path: /api/prueba/**
