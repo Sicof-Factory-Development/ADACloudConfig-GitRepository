@@ -230,6 +230,10 @@ zuul:
       service-id: co.ada.sicof.nomina.horasextras
       path: /api/nomina/horasextras/**
       sensitive-headers: Cookie,Set-Cookie      
+    nomina-reportesnomina:
+      service-id: co.ada.sicof.nomina.reportesnomina
+      path: /api/nomina/reportesnomina/**
+      sensitive-headers: Cookie,Set-Cookie   
     test-pruebamodel:
       service-id: co.ada.test.microservicio.pruebamodel
       path: /api/prueba/**
